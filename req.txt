@@ -1,0 +1,5 @@
+aiosqlite
+requests
+python-dotenv
+python-telegram-bot
+nest_asyncio

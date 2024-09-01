@@ -1,0 +1,14 @@
+#.dockerignore
+.env
+
+# Исключение директории logs
+logs/
+
+# Исключение скрытых файлов и директорий
+.git
+.venv
+.gitignore
+.DS_Store
+.vscode/
+*.pyc
+__pycache__/

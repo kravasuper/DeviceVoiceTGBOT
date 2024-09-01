@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram_bot
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}  # Передача токена через переменные окружения
+      - DV_API_URL=${DV_API_URL}
+      - DV_LOGIN=${DV_LOGIN}
+      - DV_PASS=${DV_PASS}
+      - ADMIN_ID=${ADMIN_ID}
+    volumes:
+      - .:/app  # Монтируем директорию с кодом бота
+    restart: always  # Перезапуск контейнера в случае падения
